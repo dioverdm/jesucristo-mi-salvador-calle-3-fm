@@ -4,5 +4,17 @@
 
 body {
   @apply bg-yellow-400
-  
+}
+
+input, select, textarea {
+  @apply min-w-[120px] w-full outline-none border border-gray-100 p-2 rounded-md mb-2
+}
+
+span[data-number] {
+  @apply font-semibold mr-2
+}
+
+.contentBible {
+  min-height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
 }

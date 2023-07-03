@@ -7,7 +7,8 @@ import {
     FaPause
 } from 'react-icons/fa'
 import Image from 'next/image';
-import Timer from './components/Timer';
+import Timer from '../components/Timer';
+import Bible from '@/components/Bible';
 
 export default function Home() {
     const [isPlay, setPlay] = useState(false)
@@ -26,6 +27,9 @@ export default function Home() {
                 setLoading(false)
             }
         })
+
+        return () => sound.current.stop()
+
     }, [])
 
     const handlePlay = () => {
@@ -41,7 +45,10 @@ export default function Home() {
 
     return (
         <>
-            <main className="flex flex-col min-h-screen justify-center">
+            <header className='p-4 bg-white text-center'>
+                <Bible />
+            </header>
+            <main className="flex flex-col justify-center">
                 <section className='flex flex-col gap-8 items-center text-center p-4 rounded-lg py-10 min-h-full max-w-md mx-auto'>
                     <div className='text-center p-2'>
                         <Timer />
