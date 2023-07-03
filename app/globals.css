@@ -14,7 +14,23 @@ span[data-number] {
   @apply font-semibold mr-2
 }
 
+.bible {
+  animation-name: bibleAnimation;
+  animation-duration: .5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .contentBible {
   min-height: calc(100vh - 100px);
   max-height: calc(100vh - 100px);
+}
+
+@keyframes bibleAnimation {
+  0% {
+    transform: translateX(-400px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

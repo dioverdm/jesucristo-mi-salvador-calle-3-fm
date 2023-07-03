@@ -94,7 +94,7 @@ function BibleModal({ open, handleClose }) {
     return (
         <div className={`${open ? 'block' : 'hidden'} fixed top-0 left-0 w-full min-h-screen`}>
             <div onClick={handleClose} className="bg-black opacity-20 absolute top-0 left-0 w-full h-screen z-10"></div>
-            <div className="max-w-md h-full bg-yellow-400 z-40 relative pt-2">
+            <div className="bible max-w-md h-full bg-yellow-400 z-40 relative pt-2">
                 <button className="flex items-center gap-2 font-semibold border-2 border-yellow-600 rounded-lg p-2 mx-auto" onClick={handleClose}>
                     Cerrar biblia <IoMdClose size={24} />
                 </button>
