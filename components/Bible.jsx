@@ -37,11 +37,11 @@ function BibleModal({ open, handleClose }) {
     useEffect(() => {
         const getInitialBibles = async () => {
             const bibles = await getBibles()
-            const onlySpanish = [...bibles.data].slice(0, 2).filter((bible) => {
+            const onlySpanish = [...bibles.data].filter((bible) => {
                 return bible.name.toLowerCase().includes('spanish') ||
                     bible.name.toLowerCase().includes('valera')
             })
-            setBibles(onlySpanish)
+            setBibles(onlySpanish.slice(0, 3))
         }
         getInitialBibles()
     }, [])
