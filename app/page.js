@@ -50,9 +50,6 @@ export default function Home() {
             </header>
             <main className="flex flex-col justify-center">
                 <section className='flex flex-col gap-8 items-center text-center p-4 rounded-lg py-10 min-h-full max-w-md mx-auto'>
-                    <div className='text-center p-2'>
-                        <Timer />
-                    </div>
                     <Image src='/radio-logo.svg' width={320} height={320} alt='logo casa de oracion nuevo pacto' />
                     <div>
                         <button className='w-32 h-32 bg-[#29374C] flex justify-center items-center text-white rounded-full' onClick={handlePlay}>
