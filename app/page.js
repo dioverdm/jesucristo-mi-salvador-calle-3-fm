@@ -9,6 +9,7 @@ import {
 import Image from 'next/image';
 import Timer from '../components/Timer';
 import Bible from '@/components/Bible';
+import ActivityIndicator from '@/components/ActivityIndicator';
 
 export default function Home() {
     const [isPlay, setPlay] = useState(false)
@@ -52,18 +53,11 @@ export default function Home() {
                 <section className='flex flex-col gap-8 items-center text-center p-4 rounded-lg pt-32 min-h-full max-w-md mx-auto'>
                     <Image src='/radio-logo.svg' width={320} height={320} alt='logo casa de oracion nuevo pacto' />
                     <div>
-                        <button className='w-32 h-32 bg-[#29374C] flex justify-center items-center text-white rounded-full' onClick={handlePlay}>
+                        <button className={`${loading ? 'loading' : ''} playbutton w-32 h-32 bg-[#29374C] flex justify-center items-center text-white rounded-full`} onClick={handlePlay}>
                             {
                                 isPlay ? <FaPause size={50} /> : <FaPlay size={50} />
                             }
                         </button>
-                    </div>
-                    <div>
-                        {
-                            loading && (
-                                <span>Cargando...</span>
-                            )
-                        }
                     </div>
                     <div className='mt-[-40px]'>
                         {

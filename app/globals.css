@@ -25,6 +25,34 @@ span[data-number] {
   max-height: calc(100vh - 100px);
 }
 
+.playbutton.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.playbutton.loading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid rgba(170, 163, 255, 0.4);
+  border-left-color: transparent;
+  animation-name: spin;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes bibleAnimation {
   0% {
     transform: translateX(-400px);
