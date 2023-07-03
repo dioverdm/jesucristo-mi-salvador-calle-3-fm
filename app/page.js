@@ -45,7 +45,7 @@ export default function Home() {
 
     return (
         <>
-            <header className='p-4 bg-white text-center'>
+            <header className='p-4 bg-[#29374C] text-center'>
                 <Bible />
             </header>
             <main className="flex flex-col justify-center">

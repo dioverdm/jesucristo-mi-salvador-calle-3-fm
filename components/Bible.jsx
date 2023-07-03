@@ -13,7 +13,7 @@ export default function Bible() {
 
     return (
         <>
-            <button className="flex items-center gap-2 mx-auto" onClick={handleOpen}>
+            <button className="flex items-center gap-2 mx-auto font-semibold text-white" onClick={handleOpen}>
                 Leer Biblia
                 <IoMdBook size={24} />
             </button>
