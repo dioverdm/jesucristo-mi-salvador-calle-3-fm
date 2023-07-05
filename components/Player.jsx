@@ -51,7 +51,7 @@ const Player = () => {
                     </button>
                 </div>
                 {
-                    !isPlay && (
+                    !isPlay && loading && (
                         <div className="flex items-center gap-2 bg-[rgba(0,0,0,.6)] text-white p-2 rounded-lg w-full">
                             <CiStreamOn size={24} color="yellow" />
                             <b>Escucha nuestra radio online</b>
