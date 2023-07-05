@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-yellow-400
+  @apply bg-white
 }
 
 input, select, textarea {
@@ -23,6 +23,10 @@ span[data-number] {
 .contentBible {
   min-height: calc(100vh - 100px);
   max-height: calc(100vh - 100px);
+}
+
+.playbutton {
+  @apply outline-none
 }
 
 .playbutton.loading {

@@ -1,69 +1,51 @@
 "use client"
 
-import { useEffect, useState, useRef } from 'react';
-import { Howl } from 'howler';
-import {
-    FaPlay,
-    FaPause
-} from 'react-icons/fa'
 import Image from 'next/image';
-import Timer from '../components/Timer';
 import Bible from '@/components/Bible';
-import ActivityIndicator from '@/components/ActivityIndicator';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Home() {
-    const [isPlay, setPlay] = useState(false)
-    const [loading, setLoading] = useState(false)
-
-    const sound = useRef()
-
-    useEffect(() => {
-        sound.current = new Howl({
-            src: ['http://stream.zeno.fm/jq3vvoybrrjtv'],
-            html5: true,
-            onload: () => {
-                setLoading(false)
-            },
-            onplay: () => {
-                setLoading(false)
-            }
-        })
-
-        return () => sound.current.stop()
-
-    }, [])
-
-    const handlePlay = () => {
-        if (!isPlay) {
-            setLoading(true)
-            sound.current.play()
-        } else {
-            sound.current.stop()
-        }
-
-        setPlay(!isPlay)
-    }
-
     return (
         <>
-            <header className='p-4 bg-[#29374C] text-center'>
-                <Bible />
+            <header className='p-4 sticky top-0 left-0 bg-yellow-400 w-full'>
+                <div className='max-w-4xl mx-auto flex items-center justify-between'>
+                    <Image src='/radio-logo.svg' width={200} height={100} alt='logo casa de oracion nuevo pacto' />
+                    <Bible />
+                </div>
             </header>
-            <main className="flex flex-col justify-center">
-                <section className='flex flex-col gap-8 items-center text-center p-4 rounded-lg pt-32 min-h-full max-w-md mx-auto'>
-                    <Image src='/radio-logo.svg' width={320} height={320} alt='logo casa de oracion nuevo pacto' />
+            <main className="flex flex-col justify-center pb-[200px]">
+                <section className='flex flex-col md:flex-row items-center justify-between w-full px-4 py-24 max-w-4xl mx-auto'>
                     <div>
-                        <button className={`${loading ? 'loading' : ''} playbutton w-32 h-32 bg-[#29374C] flex justify-center items-center text-white rounded-full`} onClick={handlePlay}>
-                            {
-                                isPlay ? <FaPause size={50} /> : <FaPlay size={50} />
-                            }
-                        </button>
+                        <Image src="/people-listen-music.png?v=1.0" width={420} height={200} alt='people listen music' />
                     </div>
-                    <div className='mt-[-40px]'>
-                        {
-                            isPlay && !loading && <Image src='/wave.gif' width={160} height={60} alt='wave' />
-                        }
+                    <div className='text-center md:text-left'>
+                        <h1 className='text-4xl md:text-5xl font-bold'>Casa de Oración</h1>
+                        <h4 className='text-2xl md:text-2xl'>Tu casa y también tu radio</h4>
                     </div>
+                </section>
+                <section className='w-full px-4 py-24 max-w-4xl mx-auto text-center'>
+                    <h1 className='text-4xl font-bold mb-8'>Escúcha nuestras transmiciones en vivo</h1>
+                    <ul className='text-base md:text-xl flex flex-col gap-4 max-w-md mx-auto md:text-left'>
+                        <li><b>Culto de enseñanza</b> | Miércoles 19:30 - 21:00</li>
+                        <li><b>Ayuno congregacional</b> | Sábado 11:00 - 14:00</li>
+                        <li><b>Culto de Jóvenes</b> | Sábado 19:30 - 21:00</li>
+                        <li><b>Culto dominical</b> | Domingo 11:00 - 14:00</li>
+                    </ul>
+                </section>
+                <section className='w-full px-4 py-24 max-w-4xl mx-auto text-center'>
+                    <h1 className='text-4xl font-bold mb-8'>Síguenos en nuestras redes sociales</h1>
+                    <ul className='flex items-center justify-center gap-4 max-w-md mx-auto md:text-left'>
+                        <li>
+                            <a href="https://www.instagram.com/casadeoracion.es/" target='_blank' rel='noreferrer'>
+                                <FaInstagram size={36} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100064752604323" target='_blank' rel='noreferrer'>
+                                <FaFacebook size={36} />
+                            </a>
+                        </li>
+                    </ul>
                 </section>
             </main>
         </>
