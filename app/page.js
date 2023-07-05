@@ -14,7 +14,7 @@ export default function Home() {
                     <Bible />
                 </div>
             </header>
-            <main className="flex flex-col justify-center pb-[200px]">
+            <main className="flex flex-col justify-center pb-[200px] select-none">
                 <section className='flex flex-col md:flex-row items-center justify-between w-full px-4 py-24 max-w-4xl mx-auto'>
                     <div>
                         <Image src="/people-listen-music.png?v=1.0" width={420} height={200} alt='people listen music' />
