@@ -51,25 +51,15 @@ const Player = () => {
                     </button>
                 </div>
                 {
-                    !isPlay && (
+                    (isPlay && !loading) ? (
                         <div className="flex items-center gap-2 bg-[rgba(0,0,0,.6)] text-white p-2 rounded-lg w-full">
                             <CiStreamOn size={24} color="yellow" />
-                            <b>Escucha nuestra radio online</b>
+                            <b>Estás escuchando radio online</b>
                         </div>
-                    )
-                }
-
-                {
-                    isPlay && !loading && (
-                        <div className="h-20 overflow-hidden flex items-center">
-                            <Image
-                                className={`mix-blend-screen`}
-                                src='/wave.gif'
-                                priority
-                                width={160}
-                                height={60}
-                                alt='wave'
-                            />
+                    ) : (
+                        <div className="flex items-center gap-2 bg-[rgba(0,0,0,.6)] text-white p-2 rounded-lg w-full">
+                            <CiStreamOn size={24} color="gray" />
+                            <b>Escucha nuestra radio online</b>
                         </div>
                     )
                 }

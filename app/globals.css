@@ -40,7 +40,7 @@ span[data-number] {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px solid rgba(170, 163, 255, 0.4);
+  border: 4px solid rgba(91, 90, 111, 0.6);
   border-left-color: transparent;
   animation-name: spin;
   animation-duration: .8s;

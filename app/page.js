@@ -29,7 +29,6 @@ export default function Home() {
                     <h1 className='text-4xl font-bold mb-8'>Escúcha nuestras transmiciones en vivo</h1>
                     <ul className='text-base md:text-xl flex flex-col gap-4 max-w-md mx-auto md:text-left'>
                         <li><b>Culto de enseñanza</b> | Miércoles 19:30 - 21:00</li>
-                        <li><b>Ayuno congregacional</b> | Sábado 11:00 - 14:00</li>
                         <li><b>Culto de Jóvenes</b> | Sábado 19:30 - 21:00</li>
                         <li><b>Culto dominical</b> | Domingo 11:00 - 14:00</li>
                     </ul>
