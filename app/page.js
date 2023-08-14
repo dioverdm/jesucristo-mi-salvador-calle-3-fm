@@ -14,7 +14,7 @@ export default function Home() {
                     <Bible />
                 </div>
             </header>
-            <div>
+            <div className="sticky top-[70px]">
                 <a href="https://wa.link/n6jnt9">
                     <marquee
                         className="text-2xl font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
