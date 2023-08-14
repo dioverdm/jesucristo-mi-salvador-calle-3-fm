@@ -8,16 +8,10 @@ import { CiStreamOn } from 'react-icons/ci';
 export default function Home() {
     return (
         <>
-            <header className='p-4 sticky top-0 left-0 bg-yellow-400 w-full'>
-                <div className='max-w-4xl mx-auto flex items-center justify-between'>
-                    <Image src='/radio-logo.svg' width={200} height={100} alt='logo casa de oracion nuevo pacto' />
-                    <Bible />
-                </div>
-            </header>
-            <div className="sticky top-[70px]">
-                <a href="https://wa.link/n6jnt9">
+            <div className="sticky top-0 z-[-1px]">
+                <a className="block h-full" href="https://wa.link/n6jnt9">
                     <marquee
-                        className="text-2xl font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
+                        className="text-2xl block h-full font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
                         direction="left"
                         scrollAmount={7}
                     >
@@ -25,6 +19,12 @@ export default function Home() {
                     </marquee>
                 </a>
             </div>
+            <header className='p-4 sticky top-12 left-0 bg-yellow-400 w-full'>
+                <div className='max-w-4xl mx-auto flex items-center justify-between'>
+                    <Image src='/radio-logo.svg' width={200} height={100} alt='logo casa de oracion nuevo pacto' />
+                    <Bible />
+                </div>
+            </header>
             <main className="flex flex-col justify-center pb-[200px] select-none">
                 <section className='flex flex-col md:flex-row items-center justify-between w-full px-4 py-24 max-w-4xl mx-auto'>
                     <div>
