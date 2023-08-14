@@ -15,7 +15,7 @@ export default function Home() {
                 </div>
             </header>
             <div>
-                <a href="https://wa.link/1pr7j9">
+                <a href="https://wa.link/n6jnt9">
                     <marquee
                         className="text-2xl font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
                         direction="left"
