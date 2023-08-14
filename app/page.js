@@ -17,7 +17,7 @@ export default function Home() {
             <div>
                 <a href="https://wa.link/1pr7j9">
                     <marquee
-                        className="text-2xl bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
+                        className="text-2xl font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
                         direction="left"
                         scrollAmount={10}
                     >
