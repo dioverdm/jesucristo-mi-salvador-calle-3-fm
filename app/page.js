@@ -14,6 +14,18 @@ export default function Home() {
                     <Bible />
                 </div>
             </header>
+            <div>
+                <a href="https://wa.link/1pr7j9">
+                    <marquee
+                        className="text-2xl bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
+                        direction="left"
+                        scrollAmount={12}
+                        truespeed={40}
+                    >
+                        Activación profética 2023 del 3 al 5 de noviembre, compra tus entradas ahora tocando aquí
+                    </marquee>
+                </a>
+            </div>
             <main className="flex flex-col justify-center pb-[200px] select-none">
                 <section className='flex flex-col md:flex-row items-center justify-between w-full px-4 py-24 max-w-4xl mx-auto'>
                     <div>
