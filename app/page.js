@@ -19,8 +19,7 @@ export default function Home() {
                     <marquee
                         className="text-2xl bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
                         direction="left"
-                        scrollAmount={12}
-                        truespeed={40}
+                        scrollAmount={10}
                     >
                         Activación profética 2023 del 3 al 5 de noviembre, compra tus entradas ahora tocando aquí
                     </marquee>
