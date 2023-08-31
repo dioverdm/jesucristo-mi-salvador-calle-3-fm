@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <div className="sticky top-0 z-[-1px]">
-                <a className="block h-full" href="https://wa.link/n6jnt9">
+                <a className="block h-full" href="https://buy.stripe.com/7sIcPmbG30RLeeA145">
                     <marquee
                         className="text-2xl block h-full font-medium bg-gradient-to-l to-yellow-900 from-yellow-600 text-white p-2"
                         direction="left"
@@ -34,6 +34,17 @@ export default function Home() {
                         <h1 className='text-4xl md:text-5xl font-bold'>Casa de Oración</h1>
                         <h4 className='text-2xl md:text-2xl'>Tu casa y también tu radio</h4>
                     </div>
+                </section>
+                <section className="mx-auto w-auto">
+                    <script async
+                        src="https://js.stripe.com/v3/buy-button.js">
+                    </script>
+
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1NlJ7NLVhkwsg5fq6gG2Ndhs"
+                        publishable-key="pk_live_51MUYpkLVhkwsg5fqabkEnzMvPKnMFsf7Ky77ncRS8ZHJvEdVi8pGEDQAvoY9M7OK7PJi2pPS1dsLYMQi3K2Ok8Iw00sQ260ZHe"
+                    >
+                    </stripe-buy-button>
                 </section>
                 <section className='w-full px-4 py-24 max-w-4xl mx-auto text-center'>
                     <CiStreamOn className='mx-auto mb-4' size={120} color='red' />
