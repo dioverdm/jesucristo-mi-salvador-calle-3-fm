@@ -55,11 +55,11 @@ export default function Home() {
                         <li><b>Culto de Agradecimiento</b> | Miércoles 07:00 P.M - 09:00 P.M</li>
                         <li><b>Culto de Alabanzas</b> | Jueves 07:00 P.M - 09:00 P.M</li>
 
-                        <li><b>Culto de Damas | Viernes 07:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de Damas</b> | Viernes 07:00 P.M - 09:00 P.M</li>
 
-                        <li><b>Culto de Enseñanzas | Sábado 06:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de Enseñanzas</b> | Sábado 06:00 P.M - 09:00 P.M</li>
 
-                        <li><b>Culto Dominical | Sábado 09:00 A.M - 12:00 P.M</li>
+                        <li><b>Culto Dominical</b> | Sábado 09:00 A.M - 12:00 P.M</li>
                     </ul>
                 </section>
                 <section className='w-full px-4 py-24 max-w-4xl mx-auto text-center'>
