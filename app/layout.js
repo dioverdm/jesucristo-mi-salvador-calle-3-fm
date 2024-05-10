@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Casa De Oración Radio Online',
+  title: 'Jesucristo Mi Salvador Radio Online',
   description: 'Escucha música cristiana y todos nuestros mensajes',
   manifest: '/manifest.json'
 }
