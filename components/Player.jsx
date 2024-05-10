@@ -15,7 +15,7 @@ const Player = () => {
 
     useEffect(() => {
         sound.current = new Howl({
-            src: ['http://stream.zeno.fm/jq3vvoybrrjtv'],
+            src: ['https://radios.blumhost.es/8002/stream'],
             html5: true,
             onload: () => {
                 setLoading(false)
