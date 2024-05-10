@@ -50,16 +50,16 @@ export default function Home() {
                     <CiStreamOn className='mx-auto mb-4' size={120} color='red' />
                     <h1 className='text-4xl font-bold mb-8'>Escúcha nuestras transmiciones en vivo</h1>
                     <ul className='text-base md:text-xl flex flex-col gap-4 max-w-md mx-auto md:text-left'>
-                        <li><b>Culto de oración</b> | Martes 07:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de oración</b> | Martes 07:00 PM - 09:00 PM</li>
 
-                        <li><b>Culto de Agradecimiento</b> | Miércoles 07:00 P.M - 09:00 P.M</li>
-                        <li><b>Culto de Alabanzas</b> | Jueves 07:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de Agradecimiento</b> | Miércoles 07:00 PM - 09:00 PM</li>
+                        <li><b>Culto de Alabanzas</b> | Jueves 07:00 PM - 09:00 PM</li>
 
-                        <li><b>Culto de Damas</b> | Viernes 07:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de Damas</b> | Viernes 07:00 PM - 09:00 PM</li>
 
-                        <li><b>Culto de Enseñanzas</b> | Sábado 06:00 P.M - 09:00 P.M</li>
+                        <li><b>Culto de Enseñanzas</b> | Sábado 06:00 PM - 09:00 PM</li>
 
-                        <li><b>Culto Dominical</b> | Sábado 09:00 A.M - 12:00 P.M</li>
+                        <li><b>Culto Dominical</b> | Sábado 09:00 AM - 12:00 PM</li>
                     </ul>
                 </section>
                 <section className='w-full px-4 py-24 max-w-4xl mx-auto text-center'>
